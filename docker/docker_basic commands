@@ -7,6 +7,9 @@ Docker-in-docker: https://itnext.io/docker-in-docker-521958d34efd
 ngrok: https://ngrok.com/
 https://github.com/Evalle/DCA
 
+############IMP Resource to learn docker #################################
+https://dockerlabs.collabnix.com/workshop/docker/
+
 
 
 Example HTML for nginx: /usr/share/nginx/html
