@@ -1,0 +1,14 @@
+az login
+az account show
+az group create -l westus -n k8s
+docker build -t testregistry/pythonapp26:v1 .
+az acr create --resource-group dev-rg --name testregistry --sku Basic
+az acr login -n testregistry
+docker tag pythonregis27/pythonrepo27 pythonregis27.azurecr.io/pythonrepo27:v1
+docker push pythonregis27.azurecr.io/pythonrepo27:v1
+az aks create --name kubcluster07 --resource-group LearningKuberpythones7 --node-count 1 --generate-ssh-keys --attach-acr pythonregis27
+az aks get-credentials --resource-group LearningKuberpythones7 --name kubcluster07
+kubectl apply -f eks-deploy-from-ecr.yaml
+kubectl get service
+kubectl get pods
+kubectl get nodes
