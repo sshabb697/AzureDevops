@@ -6,6 +6,10 @@
 ## Day 0: DEMO
 
 ## Day 1: Azure Boards
+- backlog
+- Sprint
+- Scrum
+- Sprint Planning
 
 ## Day 2: Azure Repos
 
