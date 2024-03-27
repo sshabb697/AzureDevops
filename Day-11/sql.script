@@ -1,0 +1,17 @@
+CREATE TABLE [dbo].[Department] (
+    [DepartmentId] [int] IDENTITY(1,1),
+    [DepartmentName] [nvarchar] (500));
+
+INSERT into [dbo].[Department] ([DepartmentName]) VALUES ('CSE');
+INSERT into [dbo].[Department] ([DepartmentName]) VALUES ('Support');
+
+
+CREATE TABLE [dbo].[Employee] (
+     [EmployeeId] [int] IDENTITY(1,1),
+     [EmployeeName] [nvarchar] (500),
+     [Department] [nvarchar] (500),
+     [DateOfJoining] [datetime],
+     [PhotoFileName] [nvarchar] (500));
+
+INSERT into [dbo].[Employee] ([EmployeeName],[Department],[DateOfJoining],[PhotoFileName]) VALUES ('rakesh','IT','2024-03-12','test.png');
+INSERT into [dbo].[Employee] ([EmployeeName],[Department],[DateOfJoining],[PhotoFileName]) VALUES ('ramu','Support','2024-01-10','test12.png');
